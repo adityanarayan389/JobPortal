@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_find"
+        android:title="find"
+        android:icon="@drawable/ic_baseline_find"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_application"
+        android:title="application"
+        android:icon="@drawable/ic_application"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_resume"
+        android:title="resume"
+        android:icon="@drawable/ic_resume"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_more"
+        android:title="more"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always"/>
+
+</menu>

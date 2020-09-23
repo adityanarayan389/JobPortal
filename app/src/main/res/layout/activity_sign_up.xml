@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/card1"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jobseeker" />
+
+    <TextView
+        android:layout_below="@+id/imageView"
+        android:id="@+id/logoname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+
+        android:fontFamily="@font/rock_salt"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="JOB PORTAL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3E3838" />
+
+
+
+    <EditText
+        android:id="@+id/et_firstName"
+        android:layout_below="@id/logoname"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+       android:hint="First Name"/>
+
+   <EditText
+       android:id="@+id/et_lastName"
+       android:layout_below="@id/et_firstName"
+       android:background="@drawable/rounded_edittext"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginBottom="10dp"
+       android:paddingLeft="10dp"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/et_signUpEmail"
+        android:layout_below="@+id/et_lastName"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"/>
+
+    <EditText
+        android:id="@+id/et_phoneNo"
+        android:layout_below="@id/et_signUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="Phone no."/>
+
+    <EditText
+        android:id="@+id/et_signUpPassword"
+        android:layout_below="@id/et_phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <EditText
+        android:id="@+id/et_cnfrmPassword"
+        android:layout_below="@+id/et_signUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rag"
+        android:layout_below="@+id/et_cnfrmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Gender:"
+            android:textColor="#303030"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/rad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+
+            android:text="Male"
+            android:textColor="#303030"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/rad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+
+            android:text="Female"
+            android:textColor="#303030"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/btn_tologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rag"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickBackToLoginPage"
+        android:layout_centerHorizontal="true"
+
+        android:text="Already registered>> Back to LoginPage"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_below="@+id/btn_tologin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="118dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+
+        android:text="SIGN UP"
+        android:textSize="25sp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="#F4DD0B">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TJobName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Job:"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:textColor="#434040"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Job"
+            android:textColor="#434040"
+            android:layout_toEndOf="@+id/TJobName"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/TJobName" />
+
+        <TextView
+            android:id="@+id/TPlaceName"
+            android:layout_below="@+id/TJobName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#434040"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Place:"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:textSize="15sp"/>
+
+
+
+        <TextView
+            android:id="@+id/text_view_place"
+            android:layout_below="@+id/TJobName"
+            android:layout_toEndOf="@+id/TPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#434040"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Place"
+
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/TPlaceName" />
+
+        <TextView
+            android:id="@+id/TSalary"
+            android:layout_below="@+id/TPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Salary:"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#434040"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text_view_salary"
+            android:layout_below="@+id/TPlaceName"
+            android:layout_toEndOf="@+id/TSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Salary"
+            android:textColor="#434040"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/TSalary" />
+
+        <TextView
+            android:id="@+id/TPhoneNo"
+            android:layout_below="@+id/TSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Phone:"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#434040"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text_view_phoneno"
+            android:layout_below="@+id/TSalary"
+            android:layout_toEndOf="@+id/TPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="PhoneNo"
+            android:textColor="#434040"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/TPhoneNo" />
+        <ImageView
+            android:layout_below="@+id/text_view_phoneno"
+            android:id="@+id/image_view_upload"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <Button
+            android:id="@+id/btn_callnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:layout_alignBottom="@+id/image_view_upload"
+            android:text="CALL NOW"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

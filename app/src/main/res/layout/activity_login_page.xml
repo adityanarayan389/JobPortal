@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/card1"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="137dp"
+        android:src="@drawable/jobseeker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        android:fontFamily="@font/rock_salt"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="JOB PORTAL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3E3838" />
+
+
+    <EditText
+        android:id="@+id/et_LogInUserId"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/et_LogInPassword"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetPassword"
+        android:text="Forgot Password?"
+        android:textColor="#F6F3F3"
+        android:textColorLink="#FF5722"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="#2196F3"
+        android:textColor="#F4EBEB"
+        android:onClick="onclickLogIn"
+
+        android:text="LOGIN"
+
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="not registered yet?"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#2196F3"
+        android:onClick="onClickSignUp"
+        android:text="sign up"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+
+
+
+</LinearLayout>

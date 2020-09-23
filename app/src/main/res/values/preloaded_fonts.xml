@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/almendra_sc</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bungee_outline</item>
+        <item>@font/diplomata</item>
+        <item>@font/faster_one</item>
+        <item>@font/holtwood_one_sc</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/rock_salt</item>
+        <item>@font/slackey</item>
+        <item>@font/sonsie_one</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>
